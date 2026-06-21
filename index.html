@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amber Mehak Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#07010f;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:#8a2be2;
+filter:blur(220px);
+opacity:.15;
+top:-200px;
+right:-100px;
+z-index:-1;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(10px);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+border-bottom:1px solid rgba(255,0,255,.2);
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#d66cff;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#d66cff;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:100px 10%;
+gap:80px;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.badge{
+display:inline-block;
+padding:8px 18px;
+background:rgba(214,108,255,.15);
+border:1px solid #d66cff;
+border-radius:30px;
+color:#d66cff;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:60px;
+line-height:1.2;
+}
+
+.hero h1 span{
+color:#d66cff;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+color:#cfcfcf;
+}
+
+.btns{
+margin-top:30px;
+display:flex;
+gap:15px;
+}
+
+.btn{
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:.4s;
+}
+
+.primary{
+background:#c84cff;
+color:white;
+box-shadow:0 0 20px #c84cff;
+}
+
+.secondary{
+border:1px solid #c84cff;
+color:white;
+}
+
+.primary:hover,
+.secondary:hover{
+transform:translateY(-4px);
+}
+
+.profile{
+width:320px;
+height:320px;
+border-radius:50%;
+padding:8px;
+background:linear-gradient(45deg,#ff00ff,#7a00ff);
+box-shadow:0 0 35px #a020f0;
+animation:glow 3s infinite alternate;
+}
+
+.profile img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #111;
+}
+
+@keyframes glow{
+from{
+box-shadow:0 0 20px #b84dff;
+}
+to{
+box-shadow:0 0 50px #ff00ff;
+}
+}
+
+section{
+padding:90px 10%;
+}
+
+.section-title{
+font-size:38px;
+text-align:center;
+margin-bottom:50px;
+color:#d66cff;
+}
+
+.card{
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,0,255,.15);
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(200,76,255,.12);
+margin-bottom:25px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#12061f;
+padding:20px;
+text-align:center;
+border-radius:15px;
+border:1px solid rgba(255,0,255,.2);
+transition:.4s;
+}
+
+.skill:hover{
+transform:translateY(-6px);
+box-shadow:0 0 20px #a020f0;
+}
+
+.project{
+margin-bottom:20px;
+}
+
+.contact-box{
+text-align:center;
+}
+
+.contact-box p{
+margin:10px 0;
+}
+
+footer{
+padding:25px;
+text-align:center;
+border-top:1px solid rgba(255,0,255,.15);
+color:#aaa;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.profile{
+width:250px;
+height:250px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">💜 Amber.dev</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<div class="badge">
+✨ Web Development Learner
+</div>
+
+<h1>
+Hi, I'm <span>Amber Mehak</span>
+</h1>
+
+<p>
+BS Public Administration Student
+</p>
+
+<p>
+Web Development Learner | Graphic Designer
+</p>
+
+<p>
+"Learning, Creating, and Growing Every Day."
+</p>
+
+<div class="btns">
+<a href="#about" class="btn primary">Explore My Journey</a>
+<a href="#contact" class="btn secondary">Contact Me</a>
+</div>
+
+</div>
+
+<div class="profile">
+<img src="profile.jpg" alt="Amber Mehak">
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+
+<p>
+I am a motivated and creative student of Public Administration with an interest in technology, web development, graphic designing, and digital skills. I am continuously learning new skills and looking for opportunities to grow professionally.
+</p>
+
+<br>
+
+<p><strong>University:</strong> University of Sindh</p>
+<p><strong>Semester:</strong> BS Public Administration (6th Semester)</p>
+<p><strong>Roll No:</strong> 2K24/PA/17</p>
+<p><strong>Email:</strong> mehakjatoi4@gmail.com</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript (Basic)</div>
+<div class="skill">Web Development</div>
+<div class="skill">Graphic Designing</div>
+<div class="skill">MS Office</div>
+<div class="skill">Communication Skills</div>
+<div class="skill">Problem Solving</div>
+
+</div>
+
+</section>
+
+<section id="courses">
+
+<h2 class="section-title">Courses</h2>
+
+<div class="card">
+✔ Graphic Designing Course
+</div>
+
+<div class="card">
+✔ NAVTTC Web Development Course (Applied / Learning)
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="card project">
+<h3>Personal Portfolio Website</h3>
+<p>Modern responsive portfolio website built for professional showcase.</p>
+</div>
+
+<div class="card project">
+<h3>Graphic Design Projects</h3>
+<p>Posters, presentations, social media posts and creative branding designs.</p>
+</div>
+
+<div class="card project">
+<h3>Practice Web Development Projects</h3>
+<p>Frontend practice projects using HTML, CSS and JavaScript.</p>
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card contact-box">
+
+<p>📧 mehakjatoi4@gmail.com</p>
+
+<p>🎓 University of Sindh</p>
+
+<p>💜 Amber Mehak</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Amber Mehak | Portfolio Website
+</footer>
+
+</body>
+</html>
